@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.macstudent.c0727944_carservicereminder.ServiceActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Service Date"
+                android:inputType="date"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="62dp" />
+
+            <EditText
+                android:id="@+id/odometer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Odometer"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="62dp" />
+
+            <Spinner
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:entries="@array/service_type"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="62dp" />
+
+            <EditText
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Cost"
+                android:inputType="numberDecimal"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="62dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RadioGroup
+                    android:id="@+id/NextService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/chkMADT"
+                    android:layout_alignStart="@+id/chkMADT"
+                    android:layout_below="@+id/chkMADT"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/dist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next Service"/>
+                    <RadioButton
+                        android:id="@+id/Dist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Distance"/>
+
+                    <RadioButton
+                        android:id="@+id/Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date" />
+                    <RadioButton
+                        android:id="@+id/None"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/station"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:entries="@array/station"
+                android:spinnerMode="dialog" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Save"/>
+
+        </LinearLayout>
+
+</ScrollView>
+
